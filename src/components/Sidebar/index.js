@@ -1,15 +1,16 @@
 import './index.scss'
 import { Link, NavLink } from 'react-router-dom'
-import LogoS from '../../assets/images/logo-s.png'
+//import LogoS from '../../assets/images/logo-s.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser, faFaceSmileWink } from '@fortawesome/free-solid-svg-icons'
-
+//import {Bandlez_logo} from '../../assets/images/Bandlez_logo.png'
+import { faEnvelope, faHome, faUser, fa} from '@fortawesome/free-solid-svg-icons'
+//Fix <img> source below//
 const Sidebar = () => (
    <div className="nav-bar">
       <Link className="logo" to="/">
-         <img src={LogoS} alt="logo" />
-         <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
+         <img src="/images/Bandlez_logo.png" alt="logo" /> 
+         <img className="sub-logo" src="/images/Bandlez_txt.png" alt="slobodan" />
       </Link>
       <nav>
          <NavLink exact="true" activeclassname="active" to="/">
@@ -34,8 +35,8 @@ const Sidebar = () => (
       </nav>
       <ul>
          <li>
-            <a target="_blank" rel="noreferrer" href="soundcloud.com/Bandlez">
-               <FontAwesomeIcon icon={faFaceSmileWink} color="4d4d4e" />
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/Bandlez">
+               
             </a>
          </li>
       </ul>
