@@ -1,5 +1,5 @@
 .nav-bar{
-    background: #181818;
+    background: #3e3a40c7;
     width: 120px;
     height: 100%;
     position: absolute;
@@ -15,14 +15,36 @@
             margin: 8px auto;
             width: 75px;
             height: auto;
+            
     
             &.sub-logo{
                 width: 90px;
+                background-color: rgba(0, 0, 0, 0.248);
             }
         }
     }
+    ul{
+        list-style: none;
+    }
+    .wrapper{
+        text-align: center;
+        
+        .social_icon{     
+            
+            display: inline-block;
+            width: 30px;
+            padding: 5px 0;
+            margin-right: 50%;
+        }
+    }
+    
     
 }
+
+
+
+
+
 nav{
     display: block;
     text-align: center;
@@ -72,7 +94,9 @@ nav{
 
         &:first-child{
             &::after{
-                content: 'HOME';
+                font-family: sans-serif;
+                font-size: small;
+                content: 'Home';
             }
         }
     }
@@ -81,19 +105,23 @@ nav{
 
         a.about-link{
             &:after {
-                content: 'ABOUT';
+                font-family: sans-serif;
+                font-size: small;
+                content: 'About Us';
             }
         }
 
         a.contact-link{
             &:after{
-                content: 'CONTACT';
+                font-family: sans-serif;
+                font-size: small;
+                content: 'Contact';
             }
         }
 
         a.active{
             svg{
-                color: #ffd700;
+                color: #ffd900c4;
             }
         }
 
